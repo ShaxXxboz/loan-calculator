@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Калькулятор кредита</title>
+
+    <style>
+        #loader, #results {
+            display: none;
+        }
+    </style>
   </head>
   <body class="bg-dark">
       <div class="container">
@@ -37,11 +43,11 @@
                           </div>
                       </form>
                       <!-- loader here -->
-                      <!-- <div id="loading">
+                      <div id="loader">
                           <img src="https://i2.wp.com/blog.hubilo.com/wp-content/uploads/2017/04/loading-.gif?ssl=1" alt="">
-                      </div> -->
+                      </div>
                       <!-- results -->
-                      <div class="results pt-5">
+                      <div class="pt-3" id="results">
                             <h5>Резултаты</h5>
                             <table class="table">
                                 <thead>
